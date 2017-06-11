@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <div>
+        <video id="bgvid" autoplay loop poster="https://s3-us-west-2.amazonaws.com/cis311project/Flowing+Water+-+HD+Background+Loop.mp4">
+            <source src ="https://s3-us-west-2.amazonaws.com/cis311project/Flowing+Water+-+HD+Background+Loop.mp4"
+                    type ="video/mp4">
+        </video>
+    </div>
+           
+ 
+ 
+                <style>
+                    video#bgvid{
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: auto;
+                        height: auto;
+                        background: url(https://s3-us-west-2.amazonaws.com/cis311project/Flowing+Water+-+HD+Background+Loop.mp4) no-repeat;
+                        background-size: cover;
+                        z-index: -100;
+                        position: fixed;
+                        top: 0;
+                    }
+                    div#divjb {
+                    height: 200px;
+                    width: 400px;
+                    background: black;
+                    opacity: 0.75;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -100px;
+                    margin-left: -200px;
+                    }
+ 
+                </style>
+                <head>
+                    <title>Water Bottle Central</title>
+                    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+                </head>
+                <body>
+                    <nav id="navbar" class="navbar-collapse inverse" class="navbar-default navbar-fixed-top">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="login.jsp">Sign In</a></li>
+                            <li><a href="main.jsp">Start Rating</a></li>
+                        </ul>
+                    </nav>
+                    <div id="divjb">
+                    <div class="text-center">
+                        <h1><font size="25" color="white">Your #1 Go To Bottled Water Central</font></h1>
+                    </div>
+                    </div>
+ 
+                </body>
+</html>
